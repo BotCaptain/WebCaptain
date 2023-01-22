@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin alternate infinite 10s ease-in-out;
   }
 }
 
@@ -25,7 +25,7 @@ button {
 }
 
 .MainScreen-header {
-  background-color: #a21a62da;
+  /* background-color: #a21a62da; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ button {
 }
 
 .LogIn-header {
-  background-color: #10bb49e0;
+  /* background-color: #10bb49e0; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@ button {
   color: white;
 }
 .SignUp-header {
-  background-color: #d3b311eb;
+  /* background-color: #d3b311eb; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;

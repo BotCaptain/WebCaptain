@@ -5,13 +5,20 @@ import Main from "./screen/WebCaptainHome/main";
 import LogIn from "./screen/Login/login";
 
 export default function App() {
+
+  const colorScheme = {
+    home:  '#8f17ebf6',
+    signup:  '#10bb49e0',
+    login:  '#d3b311eb',
+  };
+
   return (
     <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Layout />}> */}
-          <Route index element={<Main />} path="/" />
-          <Route path="signup" element={<SignUp />} />
-          <Route path="login" element={<LogIn />} />
+          <Route index element={<Main color={colorScheme.home}/>} path="/" />
+          <Route path="signup" element={<SignUp color={colorScheme.signup}/>} />
+          <Route path="login" element={<LogIn color={colorScheme.login}/>} />
         {/* </Route> */}
       </Routes>
     </BrowserRouter>
