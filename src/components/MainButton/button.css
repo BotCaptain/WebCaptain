@@ -1,0 +1,18 @@
+/*Button.css*/
+.clicked {
+    background-color: rgb(255, 94, 0);
+    color: white;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+button {
+background-color: rgb(245, 245, 245);
+font-size: 32px;
+color: rgb(0, 0, 0);
+border-radius: 20px;
+min-width: 200px;
+border: none;
+font-size: 18px;
+padding: 7px 10px;
+}
+  
