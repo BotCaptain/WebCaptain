@@ -1,6 +1,8 @@
 import logo from '../../assets/logo.svg'
 import MainButton from "../../components/MainButton/button"
 
+import { colorScheme } from '../../App';
+
 const SignUp = (props) => {
 
     return (
@@ -10,7 +12,7 @@ const SignUp = (props) => {
         <p>
             Sign Up
         </p>
-        <MainButton text='Home'/> 
+        <MainButton text='Home' color={colorScheme.home}/> 
       </header>
     </div>
     )

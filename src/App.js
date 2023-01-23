@@ -4,13 +4,14 @@ import SignUp from "./screen/Signup/signup";
 import Main from "./screen/WebCaptainHome/main";
 import LogIn from "./screen/Login/login";
 
-export default function App() {
+export const colorScheme = {
+  home:  '#8f17ebf6',
+  signup:  '#10bb49e0',
+  login:  '#d3b311eb',
+};
 
-  const colorScheme = {
-    home:  '#8f17ebf6',
-    signup:  '#10bb49e0',
-    login:  '#d3b311eb',
-  };
+
+export default function App() {
 
   return (
     <BrowserRouter>
