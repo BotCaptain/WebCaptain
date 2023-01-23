@@ -2,8 +2,8 @@
 import botIcon from '../../assets/bot.svg'
 import MainButton from "../../components/MainButton/button"
 import React from "react";
+import {theme} from '../../theme'
 
-import { colorScheme } from '../../App';
 
 const Main = (props) => {
     return (
@@ -13,8 +13,9 @@ const Main = (props) => {
         <p>
           Welcome to WebCaptain
         </p>
-        <MainButton text='Log In' color={colorScheme.login}/>
-        <MainButton text='Sign Up' color={colorScheme.signup}/>
+        <MainButton text='Log In' color={theme.login}/>
+        <MainButton text='Sign Up' color={theme.signup}/>
+        <MainButton text='User Homepage' color={theme.userhomepage}/>
       </header>
     </div>
     )

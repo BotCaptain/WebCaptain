@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin alternate infinite 10s ease-in-out;
+    animation: App-logo-spin alternate infinite 30s ease-in-out;
   }
 }
 
@@ -32,7 +32,7 @@ button {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fa4545da;
 }
 
 .LogIn-header {

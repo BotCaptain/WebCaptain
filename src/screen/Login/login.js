@@ -1,8 +1,10 @@
 import logo from '../../assets/logo.svg'
+import React from 'react';
 import MainButton from "../../components/MainButton/button"
 import InputBox from "../../components/InputBox/inputBox"
 
-import { colorScheme } from '../../App'
+import {theme} from '../../theme'
+
 
 const LogIn = (props) => {
     return (
@@ -12,7 +14,7 @@ const LogIn = (props) => {
         <p>
             Log In
         </p>
-        <MainButton text='Home' color={colorScheme.home}/>
+        <MainButton text='Home' color={theme.home}/>
         <InputBox/>
       </header>
     </div>
