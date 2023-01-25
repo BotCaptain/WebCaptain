@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "./screen/Signup/Signup";
 import Main from "./screen/WebCaptainHome/Main";
 import LogIn from "./screen/Login/Login";
-import ChatBot from "./screen/UserHomepage/UserHomepage";
+import UserHomepage from "./screen/UserHomepage/UserHomepage";
 
 import {theme} from './theme'
 
@@ -19,7 +19,7 @@ const App = () => {
           <Route index element={<Main color={theme.home}/>} path="/" />
           <Route path="signup" element={<SignUp color={theme.signup}/>} />
           <Route path="login" element={<LogIn color={theme.login}/>} />
-          <Route path="userhomepage" element={<ChatBot color={theme.userhomepage}/>} />
+          <Route path="userhomepage" element={<UserHomepage color={theme.userhomepage}/>} />
         {/* </Route> */}
       </Routes>
     </BrowserRouter>

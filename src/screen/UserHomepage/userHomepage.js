@@ -5,7 +5,8 @@ import BotCaptain from '../../components/ChatBot/bot';
 import {theme} from '../../theme'
 
 import './style.css'
-const ChatBot = (props) => {
+
+const UserHomepage = (props) => {
 
     return (
       <div className="App" style={{ backgroundColor: props.color }}>
@@ -14,11 +15,11 @@ const ChatBot = (props) => {
         <p>
             Your homepage
         </p>
-        <MainButton text='Home' color={theme.userhomepage}/> 
+        <MainButton text='Home' color={theme.home}/> 
         <BotCaptain/>
       </header>
     </div>
     )
   }
 
-export default ChatBot;
+export default UserHomepage;

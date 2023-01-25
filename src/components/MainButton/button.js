@@ -7,7 +7,7 @@ const MainButton = (props) => {
 
     return (
       <Link to={formattedScreenRoute}>
-        <button className="button" onClick={props.onClick} style={{ backgroundColor: props.color }}>
+        <button className="nav-button" onClick={props.onClick} style={{ backgroundColor: props.color }}>
           {props.text}
         </button>
     </Link>

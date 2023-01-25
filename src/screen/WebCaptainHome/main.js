@@ -1,5 +1,5 @@
 // import logo from '../../assets/logo.svg'
-import botIcon from '../../assets/bot.svg'
+import captainBot2 from '../../assets/bot_no_bg.png'
 import MainButton from "../../components/MainButton/button"
 import React from "react";
 import {theme} from '../../theme'
@@ -9,9 +9,9 @@ const Main = (props) => {
     return (
       <div className="App" style={{ backgroundColor: props.color }}>
       <header className="MainScreen-header">
-        <img src={botIcon} className="App-logo" alt="logo" />
+        <img src={captainBot2} className="App-logo-static" alt="logo" />
         <p>
-          Welcome to WebCaptain
+          Welcome to BotCaptain
         </p>
         <MainButton text='Log In' color={theme.login}/>
         <MainButton text='Sign Up' color={theme.signup}/>
