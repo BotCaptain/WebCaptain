@@ -15,6 +15,8 @@ const Main = (props) => {
         </p>
         <MainButton text='Log In' color={theme.login}/>
         <MainButton text='Sign Up' color={theme.signup}/>
+        <MainButton text='Create Team' color={theme.createteam}/>
+        <MainButton text='Join Team' color={theme.jointeam}/>
         <MainButton text='User Homepage' color={theme.userhomepage}/>
       </header>
     </div>

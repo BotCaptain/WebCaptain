@@ -1,30 +1,39 @@
-import './App.css';
-import React from 'react';
+// Dependencies
+import "./App.css";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import SignUp from "./screen/Signup/Signup";
-import Main from "./screen/WebCaptainHome/Main";
-import LogIn from "./screen/Login/Login";
-import ChatBot from "./screen/UserHomepage/UserHomepage";
+// Pages
+import SignUp from "./screen/Signup/signup";
+import Main from "./screen/WebCaptainHome/main";
+import LogIn from "./screen/Login/login";
+import CreateTeam from "./screen/CreateTeam/createteam";
+import JoinTeam from "./screen/JoinTeam/jointeam.js";
 
-import {theme} from './theme'
+// Components
+import ChatBot from "./screen/UserHomepage/userHomepage";
+
+// Styles
+import { theme } from "./theme";
 
 const App = () => {
-
   return (
-    <>
     <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Layout />}> */}
-          <Route index element={<Main color={theme.home}/>} path="/" />
-          <Route path="signup" element={<SignUp color={theme.signup}/>} />
-          <Route path="login" element={<LogIn color={theme.login}/>} />
-          <Route path="userhomepage" element={<ChatBot color={theme.userhomepage}/>} />
+        <Route index element={<Main color={theme.home} />} path="/" />
+        <Route path="signup" element={<SignUp color={theme.signup} />} />
+        <Route path="login" element={<LogIn color={theme.login} />} />
+        <Route
+          path="userhomepage"
+          element={<ChatBot color={theme.userhomepage} />}
+        />
+        <Route path="createteam" element={<CreateTeam color={theme.createteam} />} />
+        <Route path="jointeam" element={<JoinTeam color={theme.jointeam} />} />
         {/* </Route> */}
       </Routes>
     </BrowserRouter>
-    </>
   );
-}
+};
 
-export default App
+export default App;

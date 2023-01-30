@@ -1,23 +1,19 @@
-import logo from '../../assets/logo.svg'
-import React from 'react';
-import MainButton from "../../components/MainButton/button"
-
-import {theme} from '../../theme'
-
+// import logo from "../../assets/logo.svg";
+import MainButton from "../../components/MainButton/button";
+import React from "react";
+import SignUpForm from "../../components/SignUpForm/signUpForm";
+import { theme } from "../../theme";
 
 const SignUp = (props) => {
-
-    return (
-      <div className="App" style={{ backgroundColor: props.color }}>
+  return (
+    <div className="App" style={{ backgroundColor: props.color }}>
       <header className="SignUp-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            Sign Up
-        </p>
-        <MainButton text='Home' color={theme.home}/> 
+        <p>Sign Up</p>
+        <SignUpForm />
+        <MainButton text="Home" color={theme.home} />
       </header>
     </div>
-    )
-  }
+  );
+};
 
 export default SignUp;
