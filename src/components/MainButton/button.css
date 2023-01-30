@@ -1,9 +1,9 @@
 /*Button.css*/
 .clicked {
-    background-color: rgb(255, 94, 0);
-    color: white;
-    transition: background-color 0.5s ease-in-out;
-  }
+  background-color: rgb(255, 94, 0);
+  color: white;
+  transition: background-color 0.5s ease-in-out;
+}
 
 .nav-button {
 background-color: rgb(245, 245, 245);
