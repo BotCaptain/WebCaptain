@@ -11,15 +11,11 @@ const MainButton = (props) => {
           .toLowerCase()
           .replace(/\s/g, "")}`;
 
-  return (
-    <Link to={formattedScreenRoute}>
-      <button
-        className="button"
-        onClick={props.onClick}
-        style={{ backgroundColor: props.color }}
-      >
-        {props.text}
-      </button>
+    return (
+      <Link to={formattedScreenRoute}>
+        <button className="nav-button" onClick={props.onClick} style={{ backgroundColor: props.color }}>
+          {props.text}
+        </button>
     </Link>
   );
 };

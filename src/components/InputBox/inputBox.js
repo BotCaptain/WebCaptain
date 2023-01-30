@@ -21,7 +21,6 @@ const InputBox = () => {
         onChange={(event) => setPassword(event.target.value)}
         placeholder="Password"
       />
-      {/* <p>{value}</p> */}
     </div>
   );
 };

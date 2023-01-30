@@ -5,13 +5,44 @@
   transition: background-color 0.5s ease-in-out;
 }
 
-button {
+.nav-button {
+background-color: rgb(245, 245, 245);
+font-size: 32px;
+color: rgb(0, 0, 0);
+border-radius: 20px;
+min-width: 200px;
+height: 35px;
+border: none;
+margin: 6px;
+font-size: 18px;
+padding: 7px 10px;
+transition: all 0.4s ease-in-out;
+
+
+}
+  
+.nav-button:hover {
   background-color: rgb(245, 245, 245);
   font-size: 32px;
   color: rgb(0, 0, 0);
   border-radius: 20px;
-  min-width: 200px;
+  min-width: 240px;
+  height: 45px;
+  margin: 6px;
   border: none;
   font-size: 18px;
   padding: 7px 10px;
+  transition: all 0.4s ease-in-out;
+  /* animation: myAnimation 0.4s linear; */
+}
+    
+@keyframes myAnimation {
+  0% {
+    min-width: 200px;
+    min-height: 20px;
+  }
+  100% {
+    min-height: 24px;
+    min-width: 240px;
+  }
 }

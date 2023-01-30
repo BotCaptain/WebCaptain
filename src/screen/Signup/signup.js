@@ -1,8 +1,10 @@
-// import logo from "../../assets/logo.svg";
-import MainButton from "../../components/MainButton/button";
-import React from "react";
 import SignUpForm from "../../components/SignUpForm/signUpForm";
-import { theme } from "../../theme";
+import logo from '../../assets/logo.svg'
+import React from 'react';
+import MainButton from "../../components/MainButton/button"
+
+import SimpleForm from '../../components/ChatBot/constants/signupSteps';
+import {theme} from '../../theme'
 
 const SignUp = (props) => {
   return (

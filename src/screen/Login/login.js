@@ -1,7 +1,7 @@
-import logo from "../../assets/logo.svg";
-import React from "react";
-import MainButton from "../../components/MainButton/button";
-import InputBox from "../../components/InputBox/inputBox";
+import React from 'react';
+import MainButton from "../../components/MainButton/button"
+import InputBox from "../../components/InputBox/inputBox"
+import logo from '../../assets/logo.svg'
 
 import { theme } from "../../theme";
 

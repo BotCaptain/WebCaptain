@@ -2,11 +2,11 @@
 export const steps = [
   {
     id: "Greet",
-    message: "Hello, Welcome to our shop",
-    trigger: "Ask Name"
+    message: "Hello {name}, Welcome to your BotCaptain account",
+    trigger: "Ask for action"
   },
   {
-    id: "Ask Name",
+    id: "Ask for action",
     message: "Please type your name?",
     trigger: "Waiting user input for name"
   },
@@ -31,7 +31,6 @@ export const steps = [
 
 
 // ANOTHER EXAMPLE 
-
 // import React from "react";
 // const BotRedirect = ({ url, message }) => {
 //   return (
