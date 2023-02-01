@@ -1,5 +1,6 @@
-.App {
+.MainScreen {
   text-align: center;
+  min-height: 100vh;
 }
 .App-logo {
   height: 40vmin;
@@ -10,22 +11,10 @@
   pointer-events: none;
 }
 
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin alternate infinite 30s ease-in-out;
   }
-}
-
-button {
-  background-color: rgb(245, 245, 245);
-  font-size: 32px;
-  color: rgb(0, 0, 0);
-  border-radius: 20px;
-  min-width: 200px;
-  border: none;
-  font-size: 18px;
-  padding: 7px 10px;
 }
 .mask-circle {
   position: absolute;
@@ -35,39 +24,44 @@ button {
   height: 350px;
   transform: translate(-50%, -50%);
   border-radius: 200%;
-  background: '#a21a62da';
 }
-.MainScreen-header {
-  /* background-color: #a21a62da; */
-  min-height: 100vh;
+.center {
+  display: grid;
+  place-items: center;
+}
+.row {
   display: flex;
+}
+.column {
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  flex: 50%;
+  margin: 10px;
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+  border-radius: 20px;
+  padding: 30px;
 }
 
-.LogIn-header {
-  /* background-color: #10bb49e0; */
+.MainScreen-header {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(21, 20, 21);
+}
+
+.header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(22, 21, 21);
 }
-.SignUp-header {
-  /* background-color: #d3b311eb; */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 .App-link {
   color: #61dafb;
 }

@@ -9,7 +9,7 @@ const SignUpForm = () => {
 
   const handleSubmit = () => {
     // User id hard-coded for now, will be retrieved from authentication service later
-    const USER_ID = (Math.random() * 10 ** 10).toString();
+    // const USER_ID = (Math.random() * 10 ** 10).toString();
 
     // TEMPORARY -- using localStorage to simulate user being logged in
     localStorage.setItem("loggedIn", true);

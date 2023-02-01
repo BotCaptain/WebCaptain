@@ -8,9 +8,9 @@ import { theme } from "../../theme";
 const LogIn = (props) => {
   return (
     <div className="App" style={{ backgroundColor: props.color }}>
-      <header className="LogIn-header">
+      <header className="header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Log In</p>
+        <h3>Log In</h3>
         <MainButton text="Home" color={theme.home} />
         <InputBox />
       </header>

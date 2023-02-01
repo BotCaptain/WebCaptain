@@ -1,0 +1,78 @@
+
+.clicked {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+/* .button {
+  background-color: rgb(245, 245, 245);
+  border: none;
+  font-size: 18px;
+  width: 300px;
+  padding: 7px 10px;
+  transition: all 0.4s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover {
+  background-color: rgb(245, 245, 245);
+  border: none;
+  font-size: 18px;
+  padding: 7px 10px;
+  width: 500px;
+  transition: all 0.4s ease-in-out;
+} */
+
+.shadow {
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+  /* min-height: 200px; */
+  width: 30vw;
+  margin: 100px auto;
+  background: white;
+  border-radius: 5px;
+}
+.card-button {
+  background-color: rgb(245, 245, 245);
+  border: none;
+  font-size: 18px;
+  font-family: 'Gills Sans';
+  width: 300px;
+  margin: 10px;
+  min-height: 300px;
+  padding: 7px 10px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 0px;
+  transition: all 0.2s ease-in-out;
+
+}
+.card-button.clicked {
+  transform: scale(0.8);
+  background-color: lightblue;
+}
+.card-button:hover {
+  background-color: rgb(245, 245, 245);
+  border: none;
+  font-size: 18px;
+  font-family: 'Gills Sans';
+  width: 300px;
+  margin: 10px;
+  min-height: 300px;
+  padding: 7px 10px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 30px;
+  transition: all 0.2s ease-in;
+
+}

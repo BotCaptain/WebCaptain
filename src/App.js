@@ -9,7 +9,7 @@ import Main from "./screen/WebCaptainHome/main";
 import LogIn from "./screen/Login/login";
 import CreateTeam from "./screen/CreateTeam/createteam";
 import JoinTeam from "./screen/JoinTeam/jointeam.js";
-import UserHomepage from "./screen/UserHomepage/UserHomepage";
+import UserHomepage from "./screen/UserHomepage/userHomepage";
 
 // Components
 import ChatBot from "./screen/UserHomepage/userHomepage";
