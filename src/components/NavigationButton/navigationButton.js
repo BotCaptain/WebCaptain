@@ -1,8 +1,8 @@
 import React from "react";
-import "./button.css";
+import "./navigationButton.css";
 import { Link } from "react-router-dom";
 
-const MainButton = (props) => {
+const NavigationButton = (props) => {
   let formattedScreenRoute =
     props.text === "Home"
       ? "/"
@@ -19,4 +19,4 @@ const MainButton = (props) => {
     </Link>
   );
 };
-export default MainButton;
+export default NavigationButton;

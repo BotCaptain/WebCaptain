@@ -1,6 +1,6 @@
 // Dependencies
 import React from 'react';
-import MainButton from '../../components/MainButton/button';
+import NavigationButton from '../../components/NavigationButton/navigationButton';
 import { motion } from 'framer-motion/dist/framer-motion';
 
 // Components
@@ -8,32 +8,31 @@ import SignUpForm from '../../components/SignUpForm/signUpForm';
 
 // Stylig
 import {theme} from '../../theme';
-import './style.css';
-
-
-// import logo from '../../assets/logo.svg'
-// import SimpleForm from '../../components/ChatBot/constants/signupSteps';
-
-
+import './signupStyle.css';
 
 
 const SignUp = (props) => {
-	// const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-  
-	return (
-		<motion.div 
-			className="App" 
-			style={{ backgroundColor: props.color }} 
-			initial={{opacity: 0}} 
-			animate={{opacity: 1}} 
-			exit={{opacity:0}}>
 
-			<header className="header">
-				<h3>Sign Up</h3>
-				<SignUpForm />
-				<MainButton text="Home" color={theme.home} />
-			</header>
-		</motion.div>
+
+	return (
+		<div className="screen" style={{ backgroundColor: props.color }} >
+			<motion.div 
+				className="screen-center" 
+				initial={{ opacity: 0, scale: 0.5 }}
+				animate={{ opacity: 1, scale: 1 }}
+				transition={{
+					duration: 0.6,
+					delay: 0.3,
+					ease: [0, 0.71, 0.2, 1.01]
+				}}>
+				<header className="header">
+					<h3>Sign Up</h3>
+					<SignUpForm />
+					<br/>
+					<NavigationButton text="Home" color={theme.home} />
+				</header>
+			</motion.div>
+		</div>
 	);
 };
 

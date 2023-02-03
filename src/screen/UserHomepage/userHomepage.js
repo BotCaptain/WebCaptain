@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo.svg';
-import MainButton from '../../components/MainButton/button';
+import NavigationButton from '../../components/NavigationButton/navigationButton';
 import BotCaptain from '../../components/ChatBot/bot';
 import { motion } from 'framer-motion/dist/framer-motion';
 import { theme } from '../../theme';
@@ -21,7 +21,7 @@ function UserHomepage(props) {
 				<p>
           Your homepage
 				</p>
-				<MainButton text="Home" color={theme.home} />
+				<NavigationButton text="Home" color={theme.home} />
 				<BotCaptain />
 			</header>
 		</motion.div>

@@ -2,24 +2,19 @@
 :root {
   --noFocus: #ffffff;
   --focus: #5cedf8;
-  --main: #8f17ebf6;
+  --main: #ffff82;
 }
 
-/* .clicked {
-    background-color: rgb(255, 94, 0);
-    color: white;
-    transition: background-color 0.5s ease-in-out;
-  } */
-
-  
 .input-box:focus {
-  background-color: var(--focus);
+  background-color: var(--main);
   font-size: 32px;
   font-weight: 900;
-  color: rgb(249, 244, 244);
+  color: rgb(0, 0, 0);
   border-radius: 30px;
-  min-width: 220px;
-  min-height: 30px;
+  border-color: coral;
+  border-width: 22px;
+  min-width: 200px;
+  min-height: 40px;
   font-size: 18px;
   padding: 7px 10px;
   transition: min-width 0.5s ease-in-out, min-height 0.5s ease-in, background-color 0.5s ease-in
@@ -31,7 +26,7 @@
     color: rgb(0, 0, 0);
     border-radius: 20px;
     min-width: 150px;
-    min-height: 20px;
+    min-height: 35px;
     border: none;
     margin: 30px;
     font-size: 18px;

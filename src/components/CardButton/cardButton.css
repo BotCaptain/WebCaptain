@@ -4,24 +4,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-/* .button {
-  background-color: rgb(245, 245, 245);
-  border: none;
-  font-size: 18px;
-  width: 300px;
-  padding: 7px 10px;
-  transition: all 0.4s ease-in-out;
-  align-items: center;
-  justify-content: center;
-}
-.button:hover {
-  background-color: rgb(245, 245, 245);
-  border: none;
-  font-size: 18px;
-  padding: 7px 10px;
-  width: 500px;
-  transition: all 0.4s ease-in-out;
-} */
 
 .shadow {
   box-shadow:
@@ -38,14 +20,13 @@
   background: white;
   border-radius: 5px;
 }
-.card-button {
-  background-color: rgb(245, 245, 245);
+.card-button { 
   border: none;
-  font-size: 18px;
+  font-size: 28px;
   font-family: 'Gills Sans';
   width: 300px;
   margin: 10px;
-  min-height: 300px;
+  min-height: 100px;
   padding: 7px 10px;
   border-radius: 30px;
   align-items: center;
@@ -53,26 +34,21 @@
   position: relative;
   bottom: 0px;
   transition: all 0.2s ease-in-out;
+}
 
-}
-.card-button.clicked {
-  transform: scale(0.8);
-  background-color: lightblue;
-}
-.card-button:hover {
-  background-color: rgb(245, 245, 245);
+.card-button:hover { 
   border: none;
-  font-size: 18px;
+  font-size: 28px;
   font-family: 'Gills Sans';
   width: 300px;
   margin: 10px;
-  min-height: 300px;
+  min-height: 100px;
   padding: 7px 10px;
   border-radius: 30px;
   align-items: center;
   justify-content: center;
   position: relative;
-  bottom: 30px;
-  transition: all 0.2s ease-in;
-
+  bottom: 0px;
+  scale: 1.1;
+  transition: all 0.2s ease-in-out;
 }
