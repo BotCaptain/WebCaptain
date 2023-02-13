@@ -1,0 +1,36 @@
+.bot-container {
+    left: 0px;
+    bottom: 0px;
+}
+
+.screen-dashboard {
+    text-align: center;
+    min-height: 100vh;
+  }
+
+.screen-center-dashboard {
+    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.header-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(22, 21, 21);
+}
+.App {
+    text-align: center;
+    justify-content: baseline;
+    flex-direction: column;
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    padding: 25px;
+  }
+  .App-logo-static {
+    height: 35vmin;
+    pointer-events: none;
+  } 

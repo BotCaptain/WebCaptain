@@ -1,8 +1,8 @@
-// Example
+
 export const steps = [
   {
     id: "Greet",
-    message: "Hello {name}, Welcome to your BotCaptain account",
+    message: `Hello {name}, Welcome to your BotCaptain account`,
     trigger: "Ask for action"
   },
   {

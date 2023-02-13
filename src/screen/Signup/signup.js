@@ -1,5 +1,5 @@
 // Dependencies
-import React from 'react';
+import React, {useContext} from 'react';
 import NavigationButton from '../../components/NavigationButton/navigationButton';
 import { motion } from 'framer-motion/dist/framer-motion';
 
@@ -12,8 +12,6 @@ import './signupStyle.css';
 
 
 const SignUp = (props) => {
-
-
 	return (
 		<div className="screen" style={{ backgroundColor: props.color }} >
 			<motion.div 

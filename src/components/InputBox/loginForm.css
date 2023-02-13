@@ -1,0 +1,76 @@
+
+:root {
+  --noFocus: #ffffff;
+  --focus: #5cedf8;
+  --main: #ffff82;
+}
+
+.input-box:focus {
+  background-color: var(--main);
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  border-color: coral;
+  border-width: 22px;
+  min-width: 200px;
+  min-height: 40px;
+  font-size: 18px;
+  padding: 7px 10px;
+  transition: min-width 0.5s ease-in-out, min-height 0.5s ease-in, background-color 0.5s ease-in
+  }
+
+  .input-box {
+    background-color: var(--noFocus);
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    min-width: 150px;
+    min-height: 35px;
+    border: none;
+    margin: 30px;
+    font-size: 18px;
+    padding: 7px 10px;
+    transition: min-width 0.5s ease-in-out, min-height 0.5s ease-in, background-color 0.5s ease-in;
+    }
+
+  input {
+    width: 100px;
+    height: 20px;
+  }
+
+  .confirm-button {
+    background-color: rgb(189, 255, 97);
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    min-width: 200px;
+    height: 35px;
+    border: none;
+    margin: 6px;
+    font-size: 18px;
+    padding: 7px 10px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+
+.confirm-button:hover {
+    background-color: rgb(189, 255, 97);
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    min-width: 240px;
+    height: 45px;
+    margin: 6px;
+    border: none;
+    font-size: 18px;
+    padding: 7px 10px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    transition: all 0.4s ease-in-out;
+/* animation: myAnimation 0.4s linear; */
+}
+

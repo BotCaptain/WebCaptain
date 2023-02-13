@@ -1,16 +1,21 @@
 // Dependencies
 
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter} from 'react-router-dom';
 
 // Components
 import AnimatedRoutes from './components/AnimatedRoutes';
+import UserContext from './context/userContext';
 
 const App = () => {
+	const [userContext, setUserContext]= useState({});
+
 	return (
-		<BrowserRouter>
-			<AnimatedRoutes/>
-		</BrowserRouter>
+		<UserContext.Provider value={{ userContext, setUserContext }}>
+			<BrowserRouter>
+				<AnimatedRoutes/>
+			</BrowserRouter>
+		</UserContext.Provider>
 	);
 };
 

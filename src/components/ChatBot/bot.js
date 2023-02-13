@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import ChatBot from 'react-simple-chatbot';
 import bot_icon from '../../assets/bot_no_bg_portrait.png'
 import { ThemeProvider } from "styled-components";
@@ -8,15 +8,6 @@ import './bot.css'
 
 
 const CHATBOT_THEME = {
-    // background: "#FFFEFC",
-    // fontFamily: "Inter",
-    // headerBgColor: theme.login,
-    // headerFontColor: "#fff",
-    // headerFontSize: "20px",
-    // botBubbleColor: theme.login,
-    // botFontColor: "#fff",
-    // userBubbleColor: theme.login,
-    // userFontColor: "#fff",
     background: "white",
     fontFamily: "Arial, Helvetica, sans-serif",
     headerBgColor: "#53bfdb",
@@ -39,7 +30,7 @@ const BotCaptain = () =>{
   return (
     <div className='bot'>
       <ThemeProvider theme={CHATBOT_THEME}>
-        <ChatBot steps={steps} bubbleStyle={{ fontSize: '14px', fontWeight: 'bold' }} {...config}/>
+        <ChatBot  steps={steps} bubbleStyle={{ fontSize: '14px', fontWeight: 'bold' }} {...config}/>
       </ThemeProvider>
     </div>
   );
