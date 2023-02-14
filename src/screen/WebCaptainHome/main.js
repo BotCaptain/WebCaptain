@@ -1,40 +1,72 @@
 import captainBot2 from '../../assets/bot_no_bg.png';
-import CardButton from '../../components/CardButton/cardButton';
 import React from 'react';
-import { properties } from '../../example/data';
-import { motion  } from 'framer-motion/dist/framer-motion';
+// import { motion  } from 'framer-motion/dist/framer-motion';
+import { theme } from '../../theme';
+import BasicButton from '../../components/BasicButton/basicButton';
+import SignUpForm from '../../components/SignUpForm/signUpForm';
+import LogInForm from '../../components/LogInForm/logInForm';
 
-// import {theme} from '../../theme';
-import './mainStyle.css';
+const Main = () => {
+	function scrollToElement (elementId) {
+		const page = document.getElementById('start-here');
+		const element = document.getElementById(elementId);
 
-const Main = (props) => {
+		page.scrollIntoView(page);
+		setTimeout(() => element ? element.focus() : console.log(`${elementId} does not exist`), 500)
+	}
+
+	const scrollToLogin  = () => scrollToElement('login');
+	const scrollToSignup = () => scrollToElement('signup');
 	return (
-		<div className='screen' style={{ backgroundColor: props.color}}>
-			<motion.div 
-				className="screen-center" 
-				initial={{ opacity: 0, scale: 0.8 }}
-				animate={{ opacity: 1, scale: 1 }}
-				transition={{
-					duration: 0.6,
-					delay: 0.3,
-					ease: [0, 0.71, 0.2, 1.01]
-				}}>
-				<header className="header">
-					<img src={captainBot2} className="App-logo-static" alt="logo" />
-					<h2>Welcome to BotCaptain</h2>
-				</header>
-				<motion.div className='options-row'>
-					<motion.div style={{ display: 'flex', flexDirection: 'row' }}>
-						{properties.map((item)=> (
-							<CardButton 
-								key={item.id}
-								title={item.title}  
-								route={item.route} 
-								color={item.color}/>))}
-					</motion.div>
-				</motion.div>
-			</motion.div>
+		<div className="container" style={{ color: theme.text }}>
+			{/* Front Page */}
+			<section className="row container vh-100 d-flex align-items-center justify-content-center">
+				<div className="row col-8">
+					<div style={{ width:"35%" }}>
+						<img
+							src={captainBot2}
+							alt="logo"
+							className="img-fluid col rounded-lg"
+							/>
+					</div>
+					<div className="col d-flex flex-column align-items-center">
+						<div className='h-50'>
+							<h1 className="display-2 fw-bold">BotCaptain</h1>
+							<h2 className='display-8 fw-light'>| Virtual Teaching Assistant</h2>
+						</div>
+						<div className="h-50 w-100 d-flex flex-row justify-content-around align-content-center">
+							<BasicButton 
+								text="Log In"
+								onClick={ scrollToLogin }
+								color={ theme.button1 } 
+								className="btn btn-lg w-25 my-5"/>
+							<BasicButton 
+								text="Sign Up"  
+								onClick={ scrollToSignup }
+								color={ theme.button1 }
+								className="btn btn-lg w-25 my-5"/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className="row container vh-100" id="start-here">
+				{/* Sign Up/Log in */}
+				<div className="row">
+					<h2 className="display-2 pt-3 text-center">Start Here</h2>
+				</div>
+				<div className="row d-flex justify-content-center">
+					<div className='col-5'>
+						<p className='h2 fw-light text-center'>Log In</p>
+						<LogInForm></LogInForm>
+					</div>
+					<div className='col-5'>
+						<p className='h2 fw-light text-center'>Sign Up</p>
+						<SignUpForm></SignUpForm>
+					</div>
+				</div>
+			</section>
 		</div>
+
 	);
 
 

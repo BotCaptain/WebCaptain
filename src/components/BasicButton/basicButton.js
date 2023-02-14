@@ -1,10 +1,9 @@
 import React from "react";
-import "../MainButton/button.css";
 
 const BasicButton = (props) => {
   return (
       <button
-        className="button"
+        className={props.className}
         onClick={props.onClick}
         style={{ backgroundColor: props.color }}
       >

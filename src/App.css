@@ -1,0 +1,11 @@
+/* Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;400;500&display=swap');
+
+:root{
+    --wc-bg-color: #2e4057;
+}
+
+body {
+    font-family: 'Montserrat' !important;
+    background-color: var(--wc-bg-color);
+}
